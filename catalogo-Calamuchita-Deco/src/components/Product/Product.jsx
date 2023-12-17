@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import styles from './Product.module.css';
 
 const Product = ({ name, price, imageUrl }) => {
   return (
-    <div className="product">
+    <div className={styles.product}>
       <img src={imageUrl} alt={name} />
       <h3>{name}</h3>
       <p>${price}</p>
